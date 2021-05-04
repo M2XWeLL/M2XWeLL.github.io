@@ -11,7 +11,9 @@ body{
     
 
 }
-
+h2{
+	padding:5px;
+}
 .link{
 	display: flex;
 	justify-content: space-between;
