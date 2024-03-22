@@ -1,0 +1,218 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.box {
+	max-width: 80vw;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+
+}
+
+span {
+	font-size: 1vw;
+}
+
+.item {
+	width: calc(100% / 3 - 20px);
+	margin: 10px;
+	height: 240px;
+	/*display: inline-block;*/
+	background-color: #124076;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+.item:after {
+	
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.35s;
+	color: #BBE2EC;
+	text-shadow: 1px 2px 5px black;
+
+}
+.one:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Education';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+   }
+   .two:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Workers';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+   }
+   .three:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Automatisation';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+   }
+.b1:before {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'New Opportunities';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+}
+.b2:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Areas of AI Affection';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+   }
+   .four:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Major AI Advancement';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+   }
+   .five:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Complementary Service';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: #BBE2EC;
+	font-size: 2vw;
+	text-shadow: 1px 2px 5px black;
+   }
+   .six:before{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: 'Overall Conclusion';
+	width: 100%;
+	height: 100%;
+	background-color: #0003;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	transition: 0.35s;
+	color: red;
+	font-size: 2vw;
+	font-weight: 1000;
+	text-shadow: 1px 2px 5px black;
+   }
+.item>span {
+	color:#BBE2EC;
+	text-shadow: 2px 2px 0 #000;
+	
+
+	opacity: 0;
+	transition: 0.35s;
+	z-index: 1;
+}
+
+.big {
+	width: calc(100% / 2 - 20px);
+}
+.item>img {
+	width: 100%;
+	object-fit: cover;
+	/*transition: 0.09s*/
+
+
+}
+@media (hover:hover) {
+	.item:hover:before {
+		opacity: 0;
+	}
+	.item:hover:after {
+		opacity: 1;
+		/*transform: scale(1.2)*/
+	}
+	.item:hover span {
+		opacity: 1;
+	}
+}
